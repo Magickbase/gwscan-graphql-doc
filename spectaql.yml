@@ -1,0 +1,35 @@
+spectaql:
+  displayAllServers: true
+  themeDir: ./spectaql-dark-theme
+
+introspection:
+  # url: "http://api.v1.betanet.gwscan.com/graphql"
+  url: "https://gwscan-api.staging.layerview.io/graphql"
+  # url: "http://localhost:4011/graphql"
+  queryNameStrategy: capitalizeFirst
+  fieldExpansionDepth: 1
+  removeTrailingPeriodFromDescriptions: false
+
+extensions:
+  graphqlScalarExamples: true
+
+info:
+  title: Magickbase - Godwoken Explorer GraphQL API
+  description: Welcome to the Godwoken Explorer GraphQL API!
+
+  contact:
+    name: Magickbase Team
+    url: "https://github.com/magickbase"
+
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+
+servers:
+  - url: "http://api.v1.betanet.gwscan.com/graphql"
+    description: testnet-prod
+    production: true
+
+  - url: "http://api.v1.gwscan.com/graphql"
+    description: mainnet-prod
+    production: true
